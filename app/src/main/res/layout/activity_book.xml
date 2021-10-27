@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".BookActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relLayoutFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/judulBuku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Judul Buku"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayoutSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relLayoutFirst"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/gambarBuku"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/pengarangBuku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/gambarBuku"
+            android:text="Nama Pengarang"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/jumlahHalamanBuku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pengarangBuku"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/gambarBuku"
+            android:text="Jumlah Halaman Buku" />
+
+        <TextView
+            android:id="@+id/penerbitBuku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jumlahHalamanBuku"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/gambarBuku"
+            android:text="Penerbit Buku" />
+
+        <TextView
+            android:id="@+id/tanggalTerbit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/penerbitBuku"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/gambarBuku"
+            android:text="Tanggal Terbit" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/deskripsiBuku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relLayoutSecond"
+        android:layout_marginTop="15dp"
+        android:justificationMode="inter_word"
+        android:text="Deskripsi"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/deskripsiBuku">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/btnAlreadyRead"
+            android:layout_height="50dp"
+            android:text="Already Read"
+            android:textSize="10sp"
+            android:layout_alignParentBottom="true"/>
+
+        <Button
+            android:id="@+id/btnWantToRead"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btnAlreadyRead"
+            android:text="Want To Read"
+            android:textSize="10sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/btnCurrentlyReading"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/btnWantToRead"
+            android:layout_marginLeft="10dp"
+            android:textSize="10sp"
+            android:text="Currently Reading"
+            android:layout_alignParentBottom="true"/>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

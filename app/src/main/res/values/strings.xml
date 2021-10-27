@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyLibrary</string>
+    <string name="perpustakaan_ku">Perpustakaan Ku</string>
+    <string name="lihat_semua_buku">Lihat Semua Buku</string>
+    <string name="buku_yang_sedang_dibaca">Buku Yang Sedang Dibaca</string>
+    <string name="baca_buku">Baca Buku</string>
+    <string name="buku_yang_sudah_dibaca">Buku Yang Sudah Dibaca</string>
+    <string name="tentang">Tentang</string>
+</resources>

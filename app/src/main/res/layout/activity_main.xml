@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/imgBook"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_book"/>
+
+        <TextView
+            android:id="@+id/txtMyLibrary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/imgBook"
+            android:text="@string/perpustakaan_ku"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMyLibrary"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="40dp">
+
+            <Button
+                android:id="@+id/btnLihatBuku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lihat_semua_buku" />
+
+            <Button
+                android:id="@+id/btnBukuSedangDibaca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnLihatBuku"
+                android:layout_marginTop="20dp"
+                android:text="@string/buku_yang_sedang_dibaca" />
+
+            <Button
+                android:id="@+id/btnBacaBuku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnBukuSedangDibaca"
+                android:layout_marginTop="20dp"
+                android:text="@string/baca_buku" />
+
+            <Button
+                android:id="@+id/btnBukuSudahDibaca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnBacaBuku"
+                android:layout_marginTop="20dp"
+                android:text="@string/buku_yang_sudah_dibaca" />
+
+            <Button
+                android:id="@+id/btnTentang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnBukuSudahDibaca"
+                android:layout_marginTop="20dp"
+                android:text="@string/tentang" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
